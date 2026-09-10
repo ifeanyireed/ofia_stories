@@ -100,6 +100,11 @@ details.season[open] summary::before{content:"–";}
 .section-head h2{font-size:19px;}
 .section-head p{color:var(--ink-dim);font-size:13.5px;margin:4px 0 0;}
 
+.season-switcher{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line);}
+.season-btn{background:var(--panel);border:1px solid var(--line);color:var(--ink-dim);font-family:'Space Grotesk',sans-serif;font-size:13.5px;font-weight:600;padding:10px 18px;cursor:pointer;transition:all .15s;}
+.season-btn:hover,.season-btn.active{background:var(--ember);color:#0d1117;border-color:var(--ember);}
+.season-wrap{display:none;}
+.season-wrap.active{display:block;}
 .ep-nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:32px;}
 .ep-nav button{background:var(--panel);border:1px solid var(--line);color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;cursor:pointer;transition:background .15s,color .15s;}
 .ep-nav button:hover,.ep-nav button.active{background:var(--ember);color:#0d1117;border-color:var(--ember);}
@@ -1847,14 +1852,21 @@ footer.site-footer{max-width:1080px;margin:0 auto;padding:48px 24px 90px;border-
 </div>
 <div id="tab-scripts" class="tab-panel">
   <div class="scripts-wrap">
-    <div class="kicker mono" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ember);letter-spacing:.02em;margin-bottom:18px;">PHASE 6 — EPISODE SCRIPTS</div>
-    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:700;margin:0 0 10px;">The Storefront</h1>
-    <p style="color:var(--ink-dim);max-width:64ch;margin-bottom:24px;font-size:15px;">Season 1 — 24 production-ready
-    ~3-minute scripts (22 shots × 8s across 3–7 scenes per episode). Romance is organically woven into every single episode,
-    balanced by a grounded 1-in-4 life-or-death stakes cadence, 100% dialogue coverage (including unspoken thoughts in the character's heart),
-    and recurring flashback events unlocking the 2019 mystery — alongside one business tip, one relationship insight,
-    one Good Strategy / Bad Strategy lesson, and one organic Ofia product moment.</p>
-    <div class="ep-nav" id="epNav"></div>
+
+    <div class="season-switcher">
+      <button class="season-btn active" id="btn-season-1">Season 1: The Storefront (24 Episodes)</button>
+      <button class="season-btn" id="btn-season-2">Season 2: Manifest: Ambition (Batch 1: Eps 01–06 · 16:9 Widescreen)</button>
+    </div>
+
+    <div id="season-1-wrap" class="season-wrap active">
+      <div class="kicker mono" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ember);letter-spacing:.02em;margin-bottom:18px;">PHASE 6 — EPISODE SCRIPTS · SEASON 1</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:700;margin:0 0 10px;">The Storefront</h1>
+      <p style="color:var(--ink-dim);max-width:64ch;margin-bottom:24px;font-size:15px;">Season 1 — 24 production-ready
+      ~3-minute scripts (22 shots × 8s across 3–7 scenes per episode). Romance is organically woven into every single episode,
+      balanced by a grounded 1-in-4 life-or-death stakes cadence, 100% dialogue coverage (including unspoken thoughts in the character's heart),
+      and recurring flashback events unlocking the 2019 mystery — alongside one business tip, one relationship insight,
+      one Good Strategy / Bad Strategy lesson, and one organic Ofia product moment.</p>
+      <div class="ep-nav" id="epNav1"></div>
 
   <div class="ep-script active" id="ep1">
     <div class="ep-header">
@@ -6691,6 +6703,1223 @@ footer.site-footer{max-width:1080px;margin:0 auto;padding:48px 24px 90px;border-
       <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>Victory creates new proximate challenges. Achieving moral and operational triumph closes Season 1's crisis, while immediately revealing the higher-order strategic adversary of Season 2 (The Ghost Investor).</div>
     </div>
   </div>
+    </div><!-- closes #season-1-wrap -->
+
+    <div id="season-2-wrap" class="season-wrap">
+      <div class="kicker mono" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ember);letter-spacing:.02em;margin-bottom:18px;">PHASE 6 — EPISODE SCRIPTS · SEASON 2 (16:9 CINEMATIC WIDESCREEN)</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:700;margin:0 0 10px;">Manifest: Ambition</h1>
+      <p style="color:var(--ink-dim);max-width:64ch;margin-bottom:24px;font-size:15px;">Season 2 — 24 production-ready ~3-minute scripts rendered in cinematic 16:9 horizontal widescreen across Lagos and Accra. Exploring the tension between international ambition and founder integrity, with 1-in-4 calibrated life/death stakes, mandatory romance beats, 100% dialogue coverage, and the unfolding mystery of the Ghost Investor.</p>
+      <div class="ep-nav" id="epNav2"></div>
+
+  <div class="ep-script active" id="s2-ep1">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E01</div>
+      <div class="ep-title">The Border Crossing</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Life-or-death stakes:</b> Physical milestone — A fuel tanker jackknifes and explodes at the Aflao border crossing, trapping Ofia's first Ghana hardware convoy in a wall of flame; Ada and Tobi coordinate manual evacuation.</span>
+        <span><b>Location:</b> Aflao Border Crossing + Ofia Transit Van (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Kwame, Driver Kofi, Ghost Investor (shadow)</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">EXT. AFLAO BORDER CHECKPOINT — DAWN (16:9 WIDESCREEN)</div>
+          <div class="action-line">A wide anamorphic 16:9 establishing shot: dawn breaks over the dusty, chaotic border between Togo and Ghana; exhaust plumes rise as hundreds of commercial haulage trucks sit gridlocked.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(looking through dust-streaked windshield)</div>
+              <div class="line">Six hours stuck in the neutral zone, Tobi. The Cedi is sliding three points an hour while these customs agents drink tea.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Inside the branded Ofia transit van, Tobi adjusts a rack of padded server modules, checking a glowing battery terminal in his lap.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(wiping sweat from his brow, smiling gently at her)</div>
+              <div class="line">Our backup generators are holding at eighty percent. Once we clear the barrier, the Accra data hub goes live by noon.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">Ada leans over the center console, adjusting Tobi's crooked collar; their faces are inches apart, the morning sun casting warm amber across their profiles.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(soft, lingering gaze, voice dropping)</div>
+              <div class="line">We're not in Lagos anymore, Mr. Lawal. No board members, no CPO titles. Just you, me, and five thousand Accra merchants waiting on an app.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">Tobi's hand gently covers hers on the gearshift, holding it with steady, quiet warmth as diesel engines roar around them.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(intimate, eyes locking onto hers)</div>
+              <div class="line">I'd follow you through any border in Africa, Ada. You know that.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40) | CRISIS</div>
+          <div class="scene-slug">EXT. BORDER FREIGHT LANE — MOMENTS LATER (16:9 WIDESCREEN)</div>
+          <div class="action-line">A screech of blown air brakes splits the morning air; a massive overloaded fuel tanker swerves violently across the narrow border lane ahead.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Driver Kofi</div>
+              <div class="parenthetical">(shouting in Twi and English, slamming steering wheel)</div>
+              <div class="line">Look out! The brake line snapped on the fuel rig! Jump out now!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="action-line">The fuel tanker collides with a concrete barrier; sparks shower the tarmac, and an immense orange fireball detonates, black smoke billowing across the 16:9 frame.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, grabbing Tobi's arm)</div>
+              <div class="line">Fire. Not again. God, please, don't let our beginning end like Aba.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Tobi kicks his door open, heat waves distorting the air; panicked border traders and money changers scatter in terror.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(coughing in acrid smoke, pulling Ada behind him)</div>
+              <div class="line">Ada, stay low! Kofi, grab the fire extinguishers from the rear bay!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">Ada spots a mother and two young children trapped in a three-wheeler taxi pinned against the blazing guardrail.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(breaking away toward the trapped taxi, shouting)</div>
+              <div class="line">Tobi, there are children in the yellow keke! Help me pry the frame!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="scene-slug">EXT. BLAZING GUARDRAIL — CONTINUOUS (16:9 WIDESCREEN)</div>
+          <div class="action-line">Tobi discharges the heavy chemical extinguisher, knocking back the flames as Ada forces the twisted yellow sheet metal open with a tire iron.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(straining against the heat, eyes stinging)</div>
+              <div class="line">I've got the mother! Ada, pull the girl through the gap!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Ada cradles the trembling little girl in her arms, shielding her face with her jacket as secondary tires pop like gunfire in the blaze.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(soothing the child, voice steady amid chaos)</div>
+              <div class="line">You're safe, sweet girl. Look at me, don't look back at the fire.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28) | FLASHBACK</div>
+          <div class="action-line">Warm golden light: four years earlier, Tobi and Chiamaka sit on plastic stools in young Ada's mother's shop, sketching Ofia's first logo on scrap parchment.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi (2018)</div>
+              <div class="parenthetical">(eyes glowing with idealistic youth)</div>
+              <div class="line">If an artisan in Aba or Kumasi can't sell safely across the border, then technology has failed the continent.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">A shadowy figure in a bespoke Savile Row suit stands at the shop threshold, tossing a sealed envelope onto the cutting table.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ghost Investor (2018)</div>
+              <div class="parenthetical">(voice calm, sinister aristocratic chill)</div>
+              <div class="line">Ambition requires liquidity, Mr. Lawal. Take the seed capital. But remember: every bridge comes with a toll.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="scene-slug">EXT. GHANA BORDER ENTRANCE — MORNING (PRESENT, 16:9 WIDESCREEN)</div>
+          <div class="action-line">Fire crews from the border town finally arrive with sirens wailing, foaming down the scorched tarmac as customs gates swing open.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ghana Customs Officer</div>
+              <div class="parenthetical">(saluting, waving the Ofia van through)</div>
+              <div class="line">Clear the lane for the Ofia logistics team! You saved those kids, Madam. Welcome to Ghana.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">Kwame Asante strides through the immigration hall in an immaculate beige safari jacket, meeting Ada and Tobi with a sharp, relieved grin.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(extending both hands in Accra welcome)</div>
+              <div class="line">Akwaaba, Adaeze. Only you two could turn an ordinary border crossing into an international rescue mission.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Ada exhales, leaning against Kwame's outstretched arm as Tobi wipes black carbon dust from his cheekbone.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(smiling faintly, catching her breath)</div>
+              <div class="line">Tell me the servers in Cantonments are dry, Kwame. Tell me we didn't dodge a fireball just to find a dead grid.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="action-line">Kwame taps his tablet, illuminating a live telemetry graph showing 1,200 pre-registered Ghanaian storefronts in emerald green.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(proud, measured Ghanaian cadence)</div>
+              <div class="line">Twelve hundred merchants registered on Ofia Shop. But Makola Market's Queen Mother is threatening a boycott if we don't fix the cedi escrow rate.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="scene-slug">INT. OFIA REGIONAL HQ ACCRA — DUSK (16:9 WIDESCREEN)</div>
+          <div class="action-line">The new Accra open-plan office hums with energy: Ghanaian engineers and support staff monitor giant curved displays overlooking Independence Arch.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(plugging in the surviving master server module)</div>
+              <div class="line">Connecting the multi-currency escrow pipeline. Lagos Naira to Accra Cedi, settling in four seconds flat.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Ada stands beside him, looking out at the glittering Accra skyline through floor-to-ceiling glass; her hand softly rests on Tobi's shoulder.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(soft, heartfelt)</div>
+              <div class="line">Look at what we built, Tobi. From a market stall in Aba to the heart of Ghana. We really did it.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Tobi covers her hand with his, his thumb tracing her knuckles; but his eyes suddenly drift to a red terminal warning flashing in the console corner.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(internal thought, heart racing)</div>
+              <div class="line">That warning flag... that's the private cryptographic signature from 2018. Someone has activated the dormant siphon.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Ada notices his sudden tension and looks into his eyes, her expression shifting to concerned affection.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(searching his face)</div>
+              <div class="line">Tobi? What is it? You went pale.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">Tobi forces a reassuring smile, minimizing the terminal window with a quick keystroke and leaning in to press a gentle kiss to Ada's forehead.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(whispering tenderly, concealing his dread)</div>
+              <div class="line">Just tired, Ada. Just seeing ghosts in the code. I'm right here with you.</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">Ada smiles, leaning her head against his chest. On Tobi's smart watch beneath her chin, a text notification appears from an untraceable Swiss server: 'Welcome to Accra, Tobi. The first transfer has begun.'</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(in his heart, paralyzed with terror)</div>
+              <div class="line">I swore I would protect her. But the debt I buried four years ago has crossed the ocean with us.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Never send high-value hardware into international transit without bonded multi-carrier insurance and decentralized satellite telemetry.</div>
+      <div><span class="lbl">Relationship insight baked in</span>When you cross into new territory together, trust isn't proven by making promises — it's proven by who stays calm when the fuel ignites.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>Diagnose before deploying. Expanding across borders without securing the physical chokepoints is bad strategy masked as growth.</div>
+    </div>
+  </div>
+  <div class="ep-script" id="s2-ep2">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E02</div>
+      <div class="ep-title">Cedis & Cowries</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Core stakes:</b> Commercial survival — The Ghanaian Cedi plummets 8% in 48 hours against the Naira, threatening to bankrupt Ofia's first 200 cross-border fashion merchants on unpaid foreign exchange spreads.</span>
+        <span><b>Location:</b> Ofia Accra Hub + Osu Night Market (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Kwame, Bubbles (phone), Merchant Ama</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">INT. OFIA ACCRA WAR ROOM — MORNING (16:9 WIDESCREEN)</div>
+          <div class="action-line">Wide 16:9 shot: a Bloomberg terminal flashes crimson red in the center of the glass-walled Accra war room as currency ticker graphs nose-dive.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(slamming marker onto boardroom table)</div>
+              <div class="line">The Bank of Ghana just unpegged the interbank rate! The Cedi is down eight percent in forty-eight hours!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Merchant Ama, a prominent Accra batik designer, bursts through the glass doors clutching stacks of printed shipping manifests.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Merchant Ama</div>
+              <div class="parenthetical">(distressed, voice shaking)</div>
+              <div class="line">Mr. Asante! I shipped two hundred kente jackets to Lagos on Monday! Today those Nairas cannot even buy back my raw dyes in Kumasi!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">Ada steps forward with calm, commanding grace, handing Ama a glass of chilled hibiscus tea and pulling up Ama's live dashboard on a tablet.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(steady, reassuring, eye-to-eye)</div>
+              <div class="line">Sit with me, Sister Ama. No merchant on Ofia bleeds capital because of Central Bank panic. We are checking your escrow lock right now.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">Tobi types furiously on his mechanical keyboard, the green screen reflection dancing across his intense focus.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(tracing the clearinghouse code)</div>
+              <div class="line">The clearinghouse didn't lock the mid-market rate at checkout. The system floated the orders during transit.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40)</div>
+          <div class="action-line">Kwame leans over Tobi's shoulder, pointing sharply at the balance gap on the wide display.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(tense, low voice)</div>
+              <div class="line">If we cover that floating spread ourselves across two hundred merchants, Ofia Ghana loses two hundred and forty thousand Cedis by sundown.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="scene-slug">INT. OFIA ACCRA BULLPEN — AFTERNOON (16:9 WIDESCREEN)</div>
+          <div class="action-line">A video call chime rings; Ngozi 'Bubbles' Eze appears on the widescreen monitor from Lagos HQ, surrounded by packed Ofia express satchels.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Bubbles</div>
+              <div class="parenthetical">(over video call, waving shipping ledger)</div>
+              <div class="line">Ada, my girl! Lagos customers love the Accra batik! We have four hundred new orders queuing in the app right now!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Ada looks at Bubbles, then glances at Ama's anxious face across the desk.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(speaking to Bubbles)</div>
+              <div class="line">Pause automated payouts for one hour, Bubbles. If we disburse at the unhedged rate, our Accra sellers lose their entire profit margin.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">Bubbles frowns, immediately understanding the merchant peril.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Bubbles</div>
+              <div class="parenthetical">(supportive, firm)</div>
+              <div class="line">Holding the queue now. Chidi is routing our fleet through the cold storage hub until you give the green light.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="action-line">Ada turns back to Tobi, pulling up a chair right beside his workstation; their shoulders press together as they inspect the raw liquidity algorithm.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(whispering close to his ear)</div>
+              <div class="line">What does Ofia Shop promise on the billboard in Victoria Island, Tobi? 'Sovereign merchants.' If we fail Ama today, our word is worthless.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Tobi pauses, looking into Ada's eyes; the warmth between them cuts straight through the mounting panic of the trading floor.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(soft, resolute)</div>
+              <div class="line">Then we rewrite the escrow kernel. We build a localized treasury buffer so the platform absorbs currency swings, not the dressmaker.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28)</div>
+          <div class="scene-slug">EXT. OSU OXFORD STREET — NIGHT (16:9 WIDESCREEN)</div>
+          <div class="action-line">Hours later: night falls over vibrant Osu Oxford Street; neon shop signs flicker, street vendors fry plantains over charcoal braziers.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(sitting on a wooden bench outside a street kiosk, rubbing her temples)</div>
+              <div class="line">Twelve hours in front of code monitors. I think my brain is settling in Cedis.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">Tobi walks up carrying two steaming packages wrapped in brown paper and two cold bottles of ginger malt.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(grinning warmly, sitting beside her)</div>
+              <div class="line">Hot spicy kelewele and roasted groundnuts. Best executive dinner in West Africa.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="action-line">Ada laughs, taking a piece of sweet spiced plantain; their knees touch beneath the narrow bench under the warm streetlamp light.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(savoring the bite, smiling with genuine delight)</div>
+              <div class="line">Mmm. Tobi Lawal, you might actually survive outside Lagos after all.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">Tobi reaches over with a paper napkin, gently wiping a smudge of pepper from the corner of her lips; his touch is slow and electric.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(whispering, eyes fixed on her lips)</div>
+              <div class="line">With you beside me, Ada... there's nowhere else I'd rather be.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Ada leans into his hand, her breath catching as the noisy bustle of the street seems to melt into quiet background hum.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart)</div>
+              <div class="line">His fingers are so gentle. After everything Lagos threw at us, he still looks at me like I am the only person in the room.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="scene-slug">INT. OFIA ACCRA WAR ROOM — MIDNIGHT (16:9 WIDESCREEN)</div>
+          <div class="action-line">Back in the war room: Tobi deploys the newly compiled multi-currency hedging patch across Ofia Shop's live gateway.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(hitting enter with authority)</div>
+              <div class="line">Patch 2.1 deployed. Real-time rate lock at minute of purchase. Every merchant receives their guaranteed local payout.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="action-line">On the video terminal, Ama's merchant account chime rings; her notification shows 100% payout locked in Cedis.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Merchant Ama</div>
+              <div class="parenthetical">(over voice call, overjoyed)</div>
+              <div class="line">My full payment just credited in Cedis! Every single pesewa! Ofia saved my workshop!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Kwame raises his coffee mug in formal tribute toward Ada and Tobi, impressed despite himself.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(smiling with deep respect)</div>
+              <div class="line">Forty thousand Cedis saved in merchant trust. You two really are dangerous when you work together.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Ada smiles warmly at Kwame, then turns to Tobi, catching his hand under the desk and giving it an affectionate squeeze.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(proud, voice rich with affection)</div>
+              <div class="line">We make a good team, Mr. Lawal.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Tobi smiles back, but his monitor automatically refreshes with a background ledger log, exposing an anomaly.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(internal thought, eyes widening)</div>
+              <div class="line">Wait. The currency reserve buffer... it automatically routed through a secondary offshore clearing account in Zurich.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">Ada looks over toward his screen, but Tobi swiftly closes the console tab before she can see the routing address.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(curious, turning)</div>
+              <div class="line">What was that popup, Tobi?</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">Tobi turns to her, his smile masking an icy realization. On the dark glass behind them, the hidden code repository commit flashes: 'AUTHOR: T. LAWAL — 2018. BACKDOOR ROUTE ACTIVE.'</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(in his heart, sick with dread)</div>
+              <div class="line">Every time I fix a problem for Ada, I am feeding the monster that has owned me for four years.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Build an automated currency hedging corridor into your checkout logic so merchants receive guaranteed local currency settlements regardless of mid-transit forex swings.</div>
+      <div><span class="lbl">Relationship insight baked in</span>Sharing late-night burdens and unglamorous street food builds deeper romantic intimacy than champagne in high-rise suites.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>A strategy without a clear guiding policy on currency exposure is just gambling. Coherent hedging turns macro volatility into competitive advantage.</div>
+    </div>
+  </div>
+  <div class="ep-script" id="s2-ep3">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E03</div>
+      <div class="ep-title">Makola Calling</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Core stakes:</b> Community & relational survival — The powerful Queen Mother of Makola Market declares a general boycott of Ofia's digital storefronts, confiscating merchant tablets and threatening to ban any trader using 'foreign Lagos apps.'</span>
+        <span><b>Location:</b> Makola Market + Queen Mother's Guild House (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Kwame, Queen Mother Adobea, Market Guards</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">EXT. MAKOLA MARKET CENTRAL SQUARE — MORNING (16:9 WIDESCREEN)</div>
+          <div class="action-line">Sweeping cinematic 16:9 horizontal pan: Makola Market is an explosion of life, color, and sound; thousands of women under blue and orange umbrellas trade textiles, spices, and smoked fish.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(walking beside Ada and Tobi through the throng)</div>
+              <div class="line">This market generates thirty million Cedis a week, Ada. But if Queen Mother Adobea says Ofia is an enemy, not one stall will open our app.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Ahead of them, two market security enforcers in red armbands confiscate an Ofia promotional banner and smash a tablet display to pieces.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Market Enforcer</div>
+              <div class="parenthetical">(shouting in Akan, pointing at traders)</div>
+              <div class="line">No Lagos internet trickery here! Any woman caught running Ofia Shop loses her stall allocation by tomorrow!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">A crowd of angry textile traders gathers, murmuring in distrust; Ada steps directly toward the enforcers without fear, her chin high.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart)</div>
+              <div class="line">These women aren't angry at technology. They are terrified of being erased by another company making promises it won't keep.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">An aggressive youth steps forward, reaching to snatch Ada's tablet; Tobi instantly steps into the gap, his arm firmly blocking the man's path.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(calm, protective authority, eyes hard)</div>
+              <div class="line">Touch her or that tablet, my friend, and we will have a very different conversation. We came to speak to Nana Adobea.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40)</div>
+          <div class="action-line">Ada glances at Tobi, a surge of warmth and admiration flooding her chest at his unhesitating defense of her.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(softly, placing her hand on Tobi's shoulder)</div>
+              <div class="line">Thank you, Tobi. Now let's go inside the guild house.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="scene-slug">INT. QUEEN MOTHER'S GUILD CHAMBER — CONTINUOUS (16:9 WIDESCREEN)</div>
+          <div class="action-line">Interior: cool, dignified room lined with carved mahogany stools; Queen Mother Adobea, an imposing woman in magnificent gold-threaded kente, sits enthroned.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(piercing gaze, cold and aristocratic)</div>
+              <div class="line">Kwame Asante. You bring foreigners from Nigeria to siphon our market dues into silicon chips?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Kwame bows respectfully with Ghanaian customs, stepping forward to speak, but Adobea waves him off dismissively.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(harsh dismissive gesture)</div>
+              <div class="line">Save your corporate English, Kwame. I know how young men with shiny degrees operate.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">Ada steps forward, dropping onto both knees in traditional deep West African reverence before the Queen Mother.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(humble yet completely fearless, meeting her eyes)</div>
+              <div class="line">Nana, I am Adaeze Obi. My mother Comfort has sewn wrapper hems in Aba Market for thirty-five years. I did not come to teach you your business. I came to learn from a Queen.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="action-line">Queen Mother Adobea’s eyebrows rise; the silence in the chamber becomes deafening as the elder women elders lean forward.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(intrigued, leaning over her gold staff)</div>
+              <div class="line">A tailor's daughter from Aba? Then why are you walking behind these tech boys?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Ada gestures to Tobi, who steps up and opens Ofia Compass on the widescreen tablet, displaying the Makola market map.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(proud, gesturing to Tobi)</div>
+              <div class="line">Because this engineer built a map where every Makola stall keeps its name, its cash, and its autonomy. Tobi, show Nana the Guild Ledger.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28)</div>
+          <div class="scene-slug">INT. GUILD CHAMBER — MOMENTS LATER (16:9 WIDESCREEN)</div>
+          <div class="action-line">Tobi kneels beside Ada, angling the screen toward Adobea; his shoulder brushes Ada's, an unspoken current of solidarity between them.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(respectful, demonstrating with finger taps)</div>
+              <div class="line">Nana, Ofia Compass doesn't collect market fees. The two percent guild levy goes directly into your council's treasury account at Ecobank, automated on every sale.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">Adobea leans in, her sharp eyes studying the automated deposit feature that preserves the guild’s traditional revenue.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(tapping the screen with gold-ringed finger)</div>
+              <div class="line">The guild dues deposit instantly? Without the city council taking a cut first?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="action-line">Ada looks at Adobea, speaking with raw, emotional conviction.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(earnest, powerful)</div>
+              <div class="line">Instantly, Nana. When big supermarkets open on the highway, they want your daughters to become cashiers. We built Ofia so your daughters remain owners.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">A long pause hangs in the room; Adobea suddenly breaks into a deep, hearty laugh that echoes through the wooden rafters.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(laughing warmly, slapping her knee)</div>
+              <div class="line">Ei! This girl knows how to negotiate! Kwame, your mother must be very proud of who you hired.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Adobea reaches down, taking Ada’s hand and pulling her up to stand beside her, placing a beaded amber wristband on Ada's wrist.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Queen Mother Adobea</div>
+              <div class="parenthetical">(solemn cultural blessing)</div>
+              <div class="line">You have my stool's blessing, Adaeze. Makola Market will trade with Ofia. But if your system ever steals one Cedi from my women, I will personally throw you into the Gulf of Guinea.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="scene-slug">EXT. GUILD HOUSE VERANDA — DUSK (16:9 WIDESCREEN)</div>
+          <div class="action-line">Outside on the second-floor wooden veranda overlooking the buzzing market below: the evening call to prayer blends with church bells in the sunset air.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(walking downstairs with guild secretaries, beaming)</div>
+              <div class="line">I'll register the five guild councilors before nightfall. You two perform miracles.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="action-line">Ada and Tobi are left alone on the veranda; Ada leans against the carved teak balustrade, looking down at the market with shining eyes.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(looking at her beaded wristband, smiling)</div>
+              <div class="line">We did it, Tobi. We won the market.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Tobi steps behind her, his hands gently resting on her shoulders, leaning down close to her neck as the warm breeze flutters her hair.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(intimate, voice thick with awe)</div>
+              <div class="line">You did it, Ada. The way you stood up to her... you are the bravest woman I have ever known.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Ada turns around in his arms, looking up into his eyes; she touches his jawline where his stubble catches the dying amber light.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(tender, eyes glowing)</div>
+              <div class="line">You stepped in front of that enforcer without thinking twice. Nobody has ever protected me like that, Tobi.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Tobi pulls her closer against his chest, their lips parting as they lean in toward each other, their breath mingling in the dusk air.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(whispering, eyes filled with emotion)</div>
+              <div class="line">I will protect you with my life, Ada. I promise you.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">Their lips meet in a tender, passionate kiss on the veranda, backlit by the thousands of flickering lanterns of Makola Market below.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, melting into his kiss)</div>
+              <div class="line">This is what I fought for. Not just a company, but someone who fights beside me.</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">Across the street in the shadows of a black tinted Range Rover, a man with a telephoto lens snaps rapid photos of their kiss, then lowers the camera to dial a phone.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Surveillance Operative</div>
+              <div class="parenthetical">(into encrypted satellite phone)</div>
+              <div class="line">Chief Femi's friend was right. The boy is completely compromised by the tailor's daughter. Activate the Cantonments shutdown.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Never attempt to digitize an ancient marketplace by bypassing its traditional authority structures; respect local governance and build tools that empower the existing leadership.</div>
+      <div><span class="lbl">Relationship insight baked in</span>Publicly defending your partner’s honor and competence in hostile rooms cements a bond that private flattery can never achieve.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>Identify the proximate objective. Trying to conquer an entire city’s commerce in one move fails; winning the trust of the central market guild opens every door.</div>
+    </div>
+  </div>
+  <div class="ep-script" id="s2-ep4">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E04</div>
+      <div class="ep-title">The Ghost in the Commit</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Life-or-death stakes:</b> Physical milestone — Sabotaged cooling units in the Cantonments server facility trigger an explosive electrical arc flash and Halon gas dump, trapping an apprentice engineer and Tobi inside the hermetically sealed vault.</span>
+        <span><b>Location:</b> Cantonments Server Exchange + Airlock (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Apprentice Yao, Kwame, Facilities Engineer</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">INT. CANTONMENTS DATA VAULT — MORNING (16:9 WIDESCREEN)</div>
+          <div class="action-line">High-contrast 16:9 composition: rows of towering black server racks glow with cold cobalt blue LEDs inside the chilled subterranean facility.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Apprentice Yao</div>
+              <div class="parenthetical">(looking at power monitoring console, nervous)</div>
+              <div class="line">Mr. Lawal! Rack six temperature just jumped forty degrees! The primary chiller compressor isn't circulating coolant!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Tobi strides down the narrow aisle with a diagnostic tablet, smelling scorched plastic and copper in the recirculated air.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(shining flashlight into server bay, alarmed)</div>
+              <div class="line">Someone cut the glycol return valve! This wasn't an equipment failure — this was deliberate sabotage!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">A blinding white arc flash detonates from the high-voltage distribution box; high-tension sparks shower the aisle, igniting server cabling.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Apprentice Yao</div>
+              <div class="parenthetical">(screaming, knocked backward onto the floor)</div>
+              <div class="line">The capacitor blew! The Halon system is arming!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">Deafening strobe sirens activate; heavy blast doors slide shut with a pneumatic hiss, and the automated voice echoes through speakers.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Automated PA</div>
+              <div class="parenthetical">(metallic synthesized voice)</div>
+              <div class="line">Warning: Halon 1301 discharge in twenty seconds. Total oxygen displacement imminent. Evacuate immediately.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40) | CRISIS</div>
+          <div class="scene-slug">INT. SERVER VAULT AIRLOCK — CONTINUOUS (16:9 WIDESCREEN)</div>
+          <div class="action-line">Tobi hauls the dazed apprentice to the heavy steel airlock door, grabbing the red emergency lever; the handle jams halfway down.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(slamming his weight into the jammed lever, shouting)</div>
+              <div class="line">The electronic latch is dead! The short circuit welded the magnetic solenoid shut!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="action-line">Dense white Halon gas hisses violently from ceiling nozzles, rapidly replacing the breathable air as the temperature plummets.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Apprentice Yao</div>
+              <div class="parenthetical">(gasping, clutching his throat, collapsing)</div>
+              <div class="line">I can't... breathe! Mr. Lawal, help me!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Tobi strips off his heavy canvas jacket and wraps it over Yao's face, pounding on the reinforced observation window with bloody knuckles.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(coughing violently, vision blurring)</div>
+              <div class="line">Someone override the external bypass! Open the door!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">On the other side of the thick glass, Ada bursts into the corridor, her face contorted in sheer terror as she sees Tobi suffocating inside.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, slamming both hands on the glass)</div>
+              <div class="line">No! God, not Tobi! Take my life, take everything, but don't take him!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="scene-slug">INT. OBSERVATION CORRIDOR — CONTINUOUS (16:9 WIDESCREEN)</div>
+          <div class="action-line">Ada grabs a heavy carbon-dioxide fire cylinder from the wall bracket, swinging it with all her strength against the external manual release pin.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(screaming with raw fury and adrenaline)</div>
+              <div class="line">Kwame! Grab the mechanical lever! Pull with me now!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Kwame rushes up, gripping the iron bar alongside Ada; together they heave back, their muscles straining until the steel shear pin snaps.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(shouting with all his might)</div>
+              <div class="line">Heave! One, two, break it!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28) | FLASHBACK</div>
+          <div class="action-line">Four years earlier: young Tobi stares at an empty bank account on his laptop (-₦14,000); his hands shake as rent and engineer payroll loom.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi (2018)</div>
+              <div class="parenthetical">(sweating, terrified of failure)</div>
+              <div class="line">If I can't pay the server bills by Friday, Ofia dies before we even launch. I have to accept the loan.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">A terminal prompt accepts an anonymous encrypted $50,000 transfer; Tobi inserts an encrypted module titled 'GHOST_ESCROW_BRIDGE.C'.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi (2018)</div>
+              <div class="parenthetical">(in his heart, tears in his eyes)</div>
+              <div class="line">Just for six months. Once we get funding, I will delete the bridge. God forgive me.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="scene-slug">INT. OBSERVATION CORRIDOR — PRESENT (16:9 WIDESCREEN)</div>
+          <div class="action-line">The blast door groans and pops open with a violent rush of displaced gas; Ada lunges through the smoke, pulling Tobi out by his belt.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(dragging Tobi onto the tiled corridor, gasping for air)</div>
+              <div class="line">I've got you! Tobi! Breathe! Look at me!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">Tobi collapses on his side, gasping raggedly, coughing up soot and chemical residue as paramedics rush forward with oxygen masks.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(weak, fingers gripping Ada's wrist like a lifeline)</div>
+              <div class="line">Yao... is Yao... breathing?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Kwame carries the apprentice out, placing an oxygen mask over the boy's face as the boy coughs and opens his eyes.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(relieved, calling out to Tobi)</div>
+              <div class="line">Yao is breathing, Tobi! You kept him alive!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="action-line">Ada drops to her knees on the floor beside Tobi, pulling his head into her lap, her tears falling freely onto his soot-stained forehead.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(sobbing, kissing his hair, holding him tightly)</div>
+              <div class="line">You foolish, brave man. Don't you ever scare me like that again. Do you hear me?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="scene-slug">INT. CANTONMENTS FACILITY OFFICE — EVENING (16:9 WIDESCREEN)</div>
+          <div class="action-line">Hours later: the fire is extinguished; Tobi sits on a leather couch with an oxygen cannula, wrapped in a warm thermal blanket.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(handing him a mug of warm honey tea, sitting right beside him)</div>
+              <div class="line">Drink this. The doctor said your lungs will clear in twenty-four hours.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Tobi takes the mug, but his hands tremble; he looks at Ada with an intensity that borders on spiritual reverence.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(voice hoarse, eyes brimming with tears)</div>
+              <div class="line">When the air ran out... the only face I saw was yours, Ada. I thought of every minute I wasted before I told you I loved you.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Ada's breath hitches; she cups his face with both hands, looking deep into his eyes with raw vulnerability.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(whispering, leaning her forehead against his)</div>
+              <div class="line">You don't have to waste another second, Tobi. I love you too. With all my heart.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Kwame enters quietly, holding a burnt circuit board retrieved from the sabotaged rack.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(somber, holding up the burnt module)</div>
+              <div class="line">The police confirmed it. Someone clipped the coolant line from inside the building. And they left this plugged into the diagnostics port.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">Tobi looks at the charred circuit board; etched into the silicon wafer is an insignia he recognizes with sickening certainty.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(internal thought, heart freezing)</div>
+              <div class="line">The serpent seal. The private logo of the Ghost Investor's syndicate. They tried to kill me to silence the code.</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">Ada inspects the chip under the desk lamp, noticing a micro-serial number printed along the gold pins: 'LICENSED TO: OFIA LABS — 2018'. She slowly looks up at Tobi.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(confused, voice trembling slightly)</div>
+              <div class="line">Tobi... this sabotaged chip wasn't brought in from the outside. This is registered to your private development lab in Lagos.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Never operate high-density server infrastructure without redundant physical mechanical overrides on automated fire suppression airlocks.</div>
+      <div><span class="lbl">Relationship insight baked in</span>Facing the immediate mortality of someone you love strips away every polite lie and professional boundary you've erected.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>A chain is only as strong as its weakest link. Bad strategy builds multi-million dollar software on top of vulnerable single-point physical hardware.</div>
+    </div>
+  </div>
+  <div class="ep-script" id="s2-ep5">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E05</div>
+      <div class="ep-title">The High Street Cartel</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Core stakes:</b> Political & commercial rivalry — Accra retail tycoon Kofi Mensah launches 'AkwaabaCart', a direct predatory clone of Ofia Shop backed by municipal licensing cronies who issue a 24-hour padlock order against Ofia's Ghana headquarters.</span>
+        <span><b>Location:</b> Ofia Accra Hub + Kofi Mensah's High Street Suite (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Kwame, Kofi Mensah, Municipal Inspector</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">INT. OFIA ACCRA RECEPTION — MORNING (16:9 WIDESCREEN)</div>
+          <div class="action-line">Wide 16:9 shot: a pompous municipal inspector in an official sash slaps a bright orange 'NOTICE OF SUSPENSION' sticker across the glass entrance doors of Ofia Ghana.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Municipal Inspector</div>
+              <div class="parenthetical">(banging clipboard on reception desk)</div>
+              <div class="line">Under Accra Commercial Code section forty, this premises is sealed for operating an uncertified foreign financial platform!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Kwame Asante strides forward, presenting a thick leather binder containing certified stamps from the Bank of Ghana.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(cool, razor-sharp Ghanaian authority)</div>
+              <div class="line">Inspector Osei, our regulatory license was signed by the Deputy Governor on Monday. Who paid you to bring that sticker here?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">Behind the inspector, a glossy billboard across the street lights up with an ad for 'AkwaabaCart: The True Ghanaian Storefront App', featuring Kofi Mensah's smiling face.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(stepping up, eyes narrowing at the billboard)</div>
+              <div class="line">Look at the layout on that screen, Tobi. That's not just competition. That is an exact pixel-for-pixel theft of Ofia Shop.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">Tobi inspects the code on his phone, checking the app store manifest with clinical engineering precision.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(jaw clenched)</div>
+              <div class="line">They scraped our entire frontend library. Even the CSS variable names are identical. Kofi Mensah has a mole inside our repository.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40)</div>
+          <div class="action-line">The inspector gestures to two uniformed police officers to stand guard outside the entrance.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Municipal Inspector</div>
+              <div class="parenthetical">(smirking, tucking bribe envelope into his pocket)</div>
+              <div class="line">You have twenty-four hours to vacate this building, Mr. Asante. High Street belongs to Kofi Mensah.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="scene-slug">INT. ACCRA SUITE OF KOFI MENSAH — AFTERNOON (16:9 WIDESCREEN)</div>
+          <div class="action-line">Opulent penthouse suite in Airport City: Kofi Mensah, a suave retail magnate in an Italian linen suit, pours himself single-malt whisky beside a golden falcon sculpture.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kofi Mensah</div>
+              <div class="parenthetical">(smooth, velvet menace)</div>
+              <div class="line">Adaeze Obi. The famous girl from Aba who thinks she can conquer West Africa from a phone screen. Have a seat.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Ada and Tobi stand side by side, refusing the leather armchairs, radiating unshakable defiance.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(poised, piercing gaze)</div>
+              <div class="line">We didn't come to drink your whisky, Mr. Mensah. We came to tell you that stealing Ofia's code won't buy you our merchants.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">Kofi laughs softly, swirling his glass, stepping closer to Tobi with a predatory familiarity.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kofi Mensah</div>
+              <div class="parenthetical">(smirking, tapping Tobi's chest)</div>
+              <div class="line">Stolen code? Tobi Lawal knows very well that code has no owner when it was built with syndicate money. Ask your fiancé where his first server came from, Miss Obi.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="action-line">Tobi’s eyes flare with fury; he steps in front of Ada, his voice dropping to a dangerous whisper.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(steely, menacing)</div>
+              <div class="line">Leave her out of this, Mensah. You take one step toward Ofia's merchants and I will release the offshore audit of your Tema import holdings.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Kofi Mensah's smile vanishes; for a split second, genuine fear flashes across his polished mask before he recovers.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kofi Mensah</div>
+              <div class="parenthetical">(cold, menacing whisper)</div>
+              <div class="line">You have until tomorrow noon to surrender your Ghana database, Lawal. Or you won't leave Accra alive.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28)</div>
+          <div class="scene-slug">EXT. CANTONMENTS BALCONY — SUNSET (16:9 WIDESCREEN)</div>
+          <div class="action-line">Sunset over Accra: Tobi stands on the private balcony of their safe house, gripping the railing until his knuckles turn white.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(internal thought, tormented)</div>
+              <div class="line">Kofi Mensah knows about the 2018 bridge. If he talks, Ada will look at me like I am just another Chief Femi.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">Ada walks out with two cups of warm tea, leaning her shoulder against his arm and gently touching his tense neck.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(tender, perceptive)</div>
+              <div class="line">You're carrying something heavy, Tobi. Ever since we crossed that border, you look like you're waiting for a guillotine to drop.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="action-line">Tobi turns to her, his guard crumbling under the genuine love in her eyes; he covers her hands with his trembling fingers.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(voice cracking with emotion)</div>
+              <div class="line">I'm terrified of failing you, Ada. I built this company to give people like your mother a chance. But what if my past destroys everything you've worked for?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">Ada cups his face, pulling his forehead against hers, her eyes locking onto his with profound reassurance.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(fierce, unwavering devotion)</div>
+              <div class="line">Listen to me, Tobi Lawal. You are not your past. Whatever debt is out there, we face it together. No secrets, no shame. You and me.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Tobi pulls her into a tight, desperate embrace, burying his face in the curve of her neck as the purple night sky settles over the city.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(whispering against her skin)</div>
+              <div class="line">You and me. I promise you, Ada. Tomorrow we take the market back.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="scene-slug">INT. OFIA ACCRA WAR ROOM — NIGHT (16:9 WIDESCREEN)</div>
+          <div class="action-line">Inside the war room: Ada, Tobi, and Kwame gather around the strategy board as Bubbles and Chidi join on the video screen from Lagos.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(commanding, drawing an asymmetrical counter-strike on the glass)</div>
+              <div class="line">Kofi Mensah built a digital clone. But an app is only as strong as its physical fulfillment. Tomorrow morning, we launch Ofia Business Hub across sixty Makola stalls.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="action-line">Bubbles grins on screen, holding up automated dispatch manifests.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Bubbles</div>
+              <div class="parenthetical">(laughing proudly)</div>
+              <div class="line">Chidi has secured fifty smart storage lockers at the bus terminals! No customer needs Kofi's delivery fleet when our lockers are right beside their market stalls!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Kwame slaps the table with an emphatic, triumphant grin.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(triumphant)</div>
+              <div class="line">And Queen Mother Adobea has agreed to inaugurate the lockers personally at eight sharp. Inspector Osei won't dare lock our doors in front of five thousand market women.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Tobi looks across the table at Ada; their eyes meet, a shared triumph passing between them without words.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(whispering across the table)</div>
+              <div class="line">Brilliant strategy, Director Okoye.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Ada winks playfully at him, feeling the surge of momentum.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(smiling softly)</div>
+              <div class="line">Learned from the best, Chief Product Officer.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">Suddenly, David Mensah's private line rings through on Tobi's encrypted channel; David's voice is grim and panicked.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">David Mensah (voice)</div>
+              <div class="parenthetical">(urgent whisper over secure phone)</div>
+              <div class="line">Tobi, don't say my name out loud. I ran an automated checksum on the cross-border escrow accounts in Lagos.</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">Tobi steps into the shadow of the hallway as David's terminal data transmits onto his watch: 'DISCREPANCY: ₦35,000,000 MISSING. SIGNED BY: PRIVATE KEY #001_LAWALT.'</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">David Mensah (voice)</div>
+              <div class="parenthetical">(chilling conclusion)</div>
+              <div class="line">Thirty-five million Naira just vanished into an offshore account in Zurich. And the transaction carries your private cryptographic signature.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Counter predatory copycat apps not with price cuts, but by anchoring your platform to physical infrastructure — like verified pickup lockers and merchant relationship networks — that digital clones cannot replicate.</div>
+      <div><span class="lbl">Relationship insight baked in</span>Vulnerability is not weakness in leadership; confessing your fears to your partner transforms personal anxiety into collective armor.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>Create asymmetrical advantage. When a rival uses political influence to attack your distribution, counterattack through unassailable merchant loyalty.</div>
+    </div>
+  </div>
+  <div class="ep-script" id="s2-ep6">
+    <div class="ep-header">
+      <div class="ep-num">S02 · E06</div>
+      <div class="ep-title">Two Currencies, One Ledger</div>
+      <div class="ep-meta">
+        <span><b>Duration:</b> ~3 min</span>
+        <span><b>Format:</b> 16:9 Cinematic Widescreen</span>
+        <span><b>Core stakes:</b> Audit & relational crisis — David Mensah flags a ₦35,000,000 balance mismatch across the Lagos-Accra clearinghouse, discovering that the phantom transactions carry Tobi Lawal's personal 2018 cryptographic signature; Ada demands the truth.</span>
+        <span><b>Location:</b> Ofia Accra Executive Vault + Labadi Beach (16:9 Widescreen)</span>
+        <span><b>Characters:</b> Ada, Tobi, Kwame, David (voice), Chiamaka (voice)</span>
+      </div>
+    </div>
+    <div class="ep-body">
+    <div class="scene-block">
+          <div class="scene-tag">SHOT 01 (0:00 – 0:08) | HOOK</div>
+          <div class="scene-slug">INT. OFIA ACCRA EXECUTIVE VAULT — DAWN (16:9 WIDESCREEN)</div>
+          <div class="action-line">Wide 16:9 shot: dawn light cuts through the steel security blinds of the server vault; on the master projector, two ledger columns fail to balance by exactly thirty-five million Naira.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(pointing to the red highlighted row with shaking finger)</div>
+              <div class="line">Thirty-five million Naira. It left the Lagos escrow reserve at midnight and landed in a shell account in Zurich labeled 'M-ERA1'.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 02 (0:08 – 0:16)</div>
+          <div class="action-line">Kwame Asante paces the concrete floor, his face dark with shock and disbelief.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(voice tight with controlled rage)</div>
+              <div class="line">That reserve was supposed to guarantee our Ghana market operations! If the Bank of Ghana audits us today, our directors will face criminal charges!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 03 (0:16 – 0:24)</div>
+          <div class="action-line">Ada zooms in on the digital authentication block; the cryptographic signature glows on screen: 'KEY ID: TL-2018-ROOT'.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, feeling the ground give way beneath her)</div>
+              <div class="line">TL-2018-ROOT. Tobi Lawal. Please, God, let there be an explanation. Tell me he didn't lie to me.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 04 (0:24 – 0:32)</div>
+          <div class="action-line">She turns slowly toward Tobi, who stands frozen in the doorway, the morning light carving harsh shadows across his haggard face.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(voice cracking, piercingly direct)</div>
+              <div class="line">Tobi. Look at that screen. Tell me someone forged your key.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 05 (0:32 – 0:40)</div>
+          <div class="action-line">Tobi stands paralyzed, unable to look into her searching eyes, his silence hanging like a death sentence in the cold room.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(voice barely a whisper, suffocating with guilt)</div>
+              <div class="line">Ada... nobody forged it.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 06 (0:40 – 0:48)</div>
+          <div class="scene-slug">INT. EXECUTIVE VAULT — CONTINUOUS (16:9 WIDESCREEN)</div>
+          <div class="action-line">Kwame steps between them, his posture rigid with outrage.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(furious, glaring at Tobi)</div>
+              <div class="line">You stole from the merchant reserve?! While Ada and I were begging market women to trust this platform?!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 07 (0:48 – 0:56)</div>
+          <div class="action-line">Tobi steps forward, pleading desperately, his eyes fixed solely on Ada.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(desperate, emotional)</div>
+              <div class="line">I didn't steal anything, Kwame! In 2018, before we had Series A, Ofia was two days from insolvency! An investor gave us fifty thousand dollars to survive!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 08 (0:56 – 1:04)</div>
+          <div class="action-line">Ada takes a step back, her chest heaving as the betrayal pierces through her.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(bitter, tears welling in her eyes)</div>
+              <div class="line">The Ghost Investor. The same man who bankrolled Chief Femi's buyout. You took his money.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 09 (1:04 – 1:12)</div>
+          <div class="action-line">Tobi reaches out toward her, but Ada recoils, wrapping her arms around herself in protective shock.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(pleading, tears spilling over)</div>
+              <div class="line">He demanded a liquidity backdoor in the cross-border kernel! I thought I could repay it and delete the code before we launched Ghana! I swear to you, Ada, I was trying to protect you!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 10 (1:12 – 1:20)</div>
+          <div class="action-line">Ada looks at him with profound, devastating disappointment, her voice dropping to an icy whisper.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(heartbroken, trembling)</div>
+              <div class="line">You didn't protect me, Tobi. You protected yourself from having to tell me the truth.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 11 (1:20 – 1:28)</div>
+          <div class="scene-slug">EXT. LABADI BEACH BOARDWALK — AFTERNOON (16:9 WIDESCREEN)</div>
+          <div class="action-line">Wide panoramic 16:9 shot: gray waves crash violently against the golden sands of Labadi Beach; Ada walks alone along the water's edge, the ocean wind whipping her blazer.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, weeping in solitude)</div>
+              <div class="line">My mother lost her life's work in Aba because of men who made secret pacts in private rooms. And now the man I love has done the exact same thing.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 12 (1:28 – 1:36)</div>
+          <div class="action-line">Footsteps crunch in the sand behind her; Tobi approaches, his shoes soaked by the tide, looking broken and humbled.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(standing ten paces back, not daring to come closer)</div>
+              <div class="line">I'm not asking you to forgive me, Ada. I came to give you this.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 13 (1:36 – 1:44)</div>
+          <div class="action-line">He holds out an encrypted titanium hardware key on a steel lanyard.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(humbled, voice shaking with sincere remorse)</div>
+              <div class="line">That's the master revocation key. It strips me of all CPO administrative privileges and transfers root control of the treasury to you and David.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 14 (1:44 – 1:52)</div>
+          <div class="action-line">Ada looks from the key to his eyes; she sees the raw agony, the shame, and the unvarnished love staring back at her.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(soft, painful pause)</div>
+              <div class="line">Why did you build this company, Tobi? Really build it?</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 15 (1:52 – 2:00)</div>
+          <div class="action-line">Tobi looks out at the Atlantic ocean, the truth finally stripping away every corporate excuse.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(raw, unreserved honesty)</div>
+              <div class="line">Because I wanted to believe that someone like me could build something pure in a world that runs on compromise. But when the money ran out, I was a coward. And I risked the one pure thing I ever found — you.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 16 (2:00 – 2:08)</div>
+          <div class="scene-slug">INT. OFIA ACCRA WAR ROOM — NIGHT (16:9 WIDESCREEN)</div>
+          <div class="action-line">Night: Ada walks back into the war room; Kwame and David are on the live speakerphone from Lagos.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">David Mensah (voice)</div>
+              <div class="parenthetical">(urgent through speakerphone)</div>
+              <div class="line">Ada, the Zurich account just attempted a second automated drawdown for sixty million! We have ninety seconds before the transfer clears!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 17 (2:08 – 2:16)</div>
+          <div class="action-line">Kwame looks at Ada, his hand hovering over the panic switch.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(tense, urgent)</div>
+              <div class="line">If we kill the server, we shut down Ofia across the entire continent!</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 18 (2:16 – 2:24)</div>
+          <div class="action-line">Ada steps up to the master terminal, plugging in the titanium hardware key Tobi gave her on the beach.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(commanding, eyes blazing with resolve)</div>
+              <div class="line">We don't shut it down. We isolate the siphon. Tobi, sit at the keyboard and write the severance script.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 19 (2:24 – 2:32)</div>
+          <div class="action-line">Tobi steps up, his eyes widening in shock; Ada looks him directly in the eye, setting terms.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(firm, fierce, unyielding)</div>
+              <div class="line">You built this trap, Tobi Lawal. Now you are going to break it. For me. For Mama. For every merchant.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 20 (2:32 – 2:40)</div>
+          <div class="action-line">Tobi nods with profound determination, fingers flying across the keys in a blur of assembly code.</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Tobi</div>
+              <div class="parenthetical">(typing furiously, sweat pouring down his temples)</div>
+              <div class="line">Severing the Swiss routing node. Injecting multi-sig lock: Adaeze Obi, Kwame Asante, David Mensah. Zero unauthorized withdrawals permitted.</div>
+            </div>
+        </div><div class="scene-block">
+          <div class="scene-tag">SHOT 21 (2:40 – 2:48)</div>
+          <div class="action-line">The countdown hits 00:03; the screen flashes emerald green: 'TRANSFER BLOCKED. ASSETS REVERTED TO ACCRA ESCROW.'</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Kwame</div>
+              <div class="parenthetical">(exhaling in disbelief, slapping the table)</div>
+              <div class="line">Transfer aborted! The thirty-five million is back in the treasury!</div>
+            </div>
+        </div><div class="scene-block cliff-block">
+          <div class="scene-tag">SHOT 22 (2:48 – 2:56) | CLIFF</div>
+          <div class="action-line">The room falls quiet. Across the screen, an incoming encrypted message overrides the terminal: 'WELL PLAYED, ADAEZE. TOBI SAVED HIS CODE, BUT HE CANNOT SAVE YOU. MEET ME IN CANTONMENTS — OR WATCH OFIA BURN.'</div>
+          <div class="dialogue-block">
+              <div class="char-speaking">Ada</div>
+              <div class="parenthetical">(in her heart, staring at the screen with cold steel resolve)</div>
+              <div class="line">The Ghost Investor has finally shown his hand. He thinks he can break us. But he has no idea what happens when a market woman goes to war.</div>
+            </div>
+        </div>
+    </div>
+    <div class="ep-footer">
+      <div><span class="lbl">Business tip baked in</span>Deploy multi-signature time-locked escrow controls on all treasury clearing accounts so that no single executive key can authorize cross-border settlements.</div>
+      <div><span class="lbl">Relationship insight baked in</span>True love demands uncomfortable honesty; withholding critical truths to 'protect' your partner is an act of fear, not love.</div>
+      <div><span class="lbl">Good Strategy / Bad Strategy lesson (Rumelt)</span>Action without coherent diagnosis is futile. Facing the brutal facts of your internal compromise is the prerequisite for any turnaround.</div>
+    </div>
+  </div>
+    </div><!-- closes #season-2-wrap -->
 
   </div>
 </div>
@@ -6785,8 +8014,32 @@ footer.site-footer{max-width:1080px;margin:0 auto;padding:48px 24px 90px;border-
     if (btn) btn.addEventListener('click', function () { switchTab(id); });
   });
 
-  var nav = document.getElementById('epNav');
-  if (nav) {
+  // Season Switcher logic
+  var btnS1 = document.getElementById('btn-season-1');
+  var btnS2 = document.getElementById('btn-season-2');
+  var s1Wrap = document.getElementById('season-1-wrap');
+  var s2Wrap = document.getElementById('season-2-wrap');
+
+  if (btnS1 && btnS2 && s1Wrap && s2Wrap) {
+    btnS1.addEventListener('click', function () {
+      btnS1.classList.add('active');
+      btnS2.classList.remove('active');
+      s1Wrap.classList.add('active');
+      s2Wrap.classList.remove('active');
+      window.scrollTo(0, 0);
+    });
+    btnS2.addEventListener('click', function () {
+      btnS2.classList.add('active');
+      btnS1.classList.remove('active');
+      s2Wrap.classList.add('active');
+      s1Wrap.classList.remove('active');
+      window.scrollTo(0, 0);
+    });
+  }
+
+  // Navigation for Season 1
+  var nav1 = document.getElementById('epNav1');
+  if (nav1) {
     for (var i = 1; i <= 24; i++) {
       (function (n) {
         var btn = document.createElement('button');
@@ -6794,11 +8047,30 @@ footer.site-footer{max-width:1080px;margin:0 auto;padding:48px 24px 90px;border-
         if (n === 1) btn.classList.add('active');
         btn.addEventListener('click', function () {
           for (var j = 1; j <= 24; j++) { var el = document.getElementById('ep' + j); if (el) el.classList.remove('active'); }
-          nav.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+          nav1.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
           var ep = document.getElementById('ep' + n); if (ep) ep.classList.add('active');
           btn.classList.add('active');
         });
-        nav.appendChild(btn);
+        nav1.appendChild(btn);
+      })(i);
+    }
+  }
+
+  // Navigation for Season 2
+  var nav2 = document.getElementById('epNav2');
+  if (nav2) {
+    for (var i = 1; i <= 6; i++) {
+      (function (n) {
+        var btn = document.createElement('button');
+        btn.textContent = 'E' + String(n).padStart(2, '0');
+        if (n === 1) btn.classList.add('active');
+        btn.addEventListener('click', function () {
+          for (var j = 1; j <= 6; j++) { var el = document.getElementById('s2-ep' + j); if (el) el.classList.remove('active'); }
+          nav2.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+          var ep = document.getElementById('s2-ep' + n); if (ep) ep.classList.add('active');
+          btn.classList.add('active');
+        });
+        nav2.appendChild(btn);
       })(i);
     }
   }
