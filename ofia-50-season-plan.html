@@ -136,7 +136,11 @@ details.season[open] summary::before{content:"–";}
 .prod-card{background:var(--panel);padding:18px 20px;}
 .prod-card .pname{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:var(--signal-2);margin-bottom:6px;}
 .prod-card .pdesc{font-size:13px;color:var(--ink-dim);}
-.prompt-box{background:#070a0d;border:1px solid var(--line);padding:13px 15px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--growth);line-height:1.65;margin-top:10px;white-space:pre-wrap;word-break:break-word;}
+.prompt-box{background:#070a0d;border:1px solid var(--line);padding:13px 15px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--growth);line-height:1.65;margin-top:8px;white-space:pre-wrap;word-break:break-word;}
+.sound-box{background:#060d14;border:1px solid rgba(82,180,255,.25);padding:13px 15px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--signal-2);line-height:1.65;margin-top:8px;white-space:pre-wrap;word-break:break-word;}
+.prompt-lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.04em;display:block;}
+.prompt-lbl.vis{color:var(--growth);margin-top:10px;}
+.prompt-lbl.snd{color:var(--signal-2);margin-top:12px;}
 .voice-table,.secondary-table,.kpi-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:36px;}
 .voice-table th,.secondary-table th,.kpi-table th{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--growth);text-transform:uppercase;letter-spacing:.04em;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);}
 .voice-table td,.secondary-table td,.kpi-table td{padding:9px 10px;border-bottom:1px solid rgba(38,49,58,.5);vertical-align:top;color:var(--ink-dim);}
@@ -11605,13 +11609,87 @@ footer.site-footer{max-width:1080px;margin:0 auto;padding:48px 24px 90px;border-
       <div class="prod-card"><div class="pname">Ada &amp; Mama Comfort — Aba Heritage Two-Shot (16:9)</div><div class="prompt-box">Warm, tender horizontal two-shot of Ada sitting on a wooden stool beside Mama Comfort in the Aba workshop, Mama Comfort gently smoothing the collar of Ada's blazer while Ada shows her the Ofia merchant portal on a tablet, golden tungsten practical light, emotional depth, photorealistic, cinematic widescreen, 16:9.</div></div>
     </div>
 
-    <div class="section-head"><h3>Location &amp; Environmental References (16:9 Widescreen)</h3><p>Master atmospheric prompts for recurring geographic and corporate spaces.</p></div>
+    <div class="section-head"><h3>Location &amp; Environmental References (16:9 Widescreen &amp; Spatial Audio)</h3><p>Paired visual generation prompts and environmental audio/Foley bed specifications for recurring geographic, corporate, and cultural spaces.</p></div>
     <div class="prod-grid">
-      <div class="prod-card"><div class="pname">Ofia HQ Lagos — Location Reference (16:9)</div><div class="prompt-box">Modern African tech headquarters atrium, Lagos skyline through expansive floor-to-ceiling glass windows, warm teak wood architectural slats, cool signal-blue accent lighting, standing desks, massive curved video wall displaying live merchant analytics, golden-hour volumetric light rays, photorealistic, wide establishing shot, 16:9.</div></div>
-      <div class="prod-card"><div class="pname">Mama Comfort's Shop Aba — Location Reference (16:9)</div><div class="prompt-box">Authentic Nigerian artisan tailor shop interior, Aba market, bolts of vivid wax-print and George fabric stacked high, vintage cast-iron Singer sewing machine on worn wooden table under a warm hanging tungsten bulb, chalk markings on cutting table, rich cultural texture, photorealistic, wide horizontal interior, 16:9.</div></div>
-      <div class="prod-card"><div class="pname">Accra Regional Hub &amp; Makola — Location Reference (16:9)</div><div class="prompt-box">Split atmospheric composition: modern glass-and-terracotta Ofia Accra regional center overlooking the vibrant, bustling open-air Makola market lanes below, merchant umbrellas, yellow trotros, coastal Atlantic haze, cinematic documentary grade, photorealistic, wide panoramic shot, 16:9.</div></div>
-      <div class="prod-card"><div class="pname">Tema Port Cargo Corridor — Location Reference (16:9)</div><div class="prompt-box">Vast container shipping terminal at Tema Port at dusk, towering gantry cranes silhouetted against twilight sky, rows of colorful shipping containers, freight haulers, maritime haze, amber industrial work lights reflected on damp asphalt, cinematic widescreen establishing shot, 16:9.</div></div>
-      <div class="prod-card"><div class="pname">Cantonments Private Penthouse — Location Reference (16:9)</div><div class="prompt-box">Ultra-luxury modernist penthouse in Cantonments Accra, floor-to-ceiling panoramic glass facing tropical night skyline, dark Italian marble floors, architectural low-profile furniture, ambient indirect warm illumination, private armored server terminal discreetly integrated into mahogany credenza, photorealistic, wide cinematic shot, 16:9.</div></div>
+      <div class="prod-card">
+        <div class="pname">Ofia HQ Lagos — Innovation Atrium (Lagos)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Modern African tech headquarters atrium, Victoria Island skyline through expansive floor-to-ceiling glass windows, warm teak wood architectural slats, cool signal-blue accent lighting, standing desks, massive curved video wall displaying live merchant analytics, golden-hour volumetric light rays, photorealistic, wide establishing shot, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">High-ceilinged glass atrium acoustic space with natural corporate reverb. Low continuous sub-bass drone of commercial HVAC system (60Hz), distant murmurs of customer support reps in Lagos English and pidgin, synchronized tactile mechanical keyboard clatter, soft crystalline digital chimes of successful merchant transactions pinging on live telemetry wall, muffled Victoria Island street traffic and distant coastal maritime horn through thick soundproof glass.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">The Loft — Engineering Floor &amp; Server Pod (Ofia HQ 3rd Floor)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Exposed concrete industrial workspace, standing workstations, dual-monitor arrays with terminal interfaces, high-density server racks behind transparent mesh cages, glowing telemetry arrays, dim peripheral workstation lamps, wide horizontal framing, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Tight industrial acoustic space with moderate dry flutter echo. High-frequency whir of rack-mounted server cooling fans and intake blowers, rhythmic syncopated tactile clicking of mechanical keycaps, occasional subdued technical exchanges ("staging rollback confirmed", "API response sub-40ms"), soft hiss of espresso machine steam wand in kitchenette, subtle low-frequency electrical resonance of high-voltage server distribution units.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Mama Comfort's Shop Aba — Artisan Textile Workshop (Aba)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Authentic Nigerian artisan tailor shop interior, Aba market, bolts of vivid wax-print and George fabric stacked high, vintage cast-iron Singer sewing machine on worn wooden table under a warm hanging tungsten bulb, chalk markings on cutting table, rich cultural texture, photorealistic, wide horizontal interior, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Warm, dusty room acoustics with natural cloth sound absorption. Steady, hypnotic rhythmic clacking and metallic foot-pedal squeak of vintage cast-iron Singer sewing machine, sharp crisp shearing of heavy dressmaking shears slicing through stiff waxed cotton, soft rustle of folded fabric bolts, distant lively Aba market corridor chatter in melodic Southeastern Igbo, muffled hum of neighborhood diesel generators humming in distance, gentle ceiling fan flutter.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Accra Regional Hub &amp; Makola Market (Accra)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Split atmospheric composition: modern glass-and-terracotta Ofia Accra regional center overlooking the vibrant, bustling open-air Makola market lanes below, merchant umbrellas, yellow trotros, coastal Atlantic haze, cinematic documentary grade, photorealistic, wide panoramic shot, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Expansive dual-layer soundscape. Foreground: crisp, clean air-conditioned conference room acoustic with dry reflections, subtle paper shuffling and tablet stylus tapping. Background (bleeding through open balcony): vibrant, high-energy sonic tapestry of Makola market — rapid Twi trade bargaining, energetic wooden trolley wheels rattling over uneven asphalt, honking yellow-and-blue tro-tros, distant upbeat Highlife / Afrobeats bleeding from transistor radio stall, merchant calls for fresh fabric and spices.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Tema Port Cargo Terminal &amp; Logistics Corridor (Ghana)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Vast container shipping terminal at Tema Port at dusk, towering gantry cranes silhouetted against twilight sky, rows of colorful shipping containers, freight haulers, maritime haze, amber industrial work lights reflected on damp asphalt, cinematic widescreen establishing shot, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Vast outdoor maritime industrial soundscape with wide stereo field and slap-back concrete echoes. Deep rhythmic low-end diesel engine idle of 40-foot freight haulers, metallic clank and hydraulic squeal of gantry cranes hoisting twenty-ton shipping containers, distant foghorns echoing across the Gulf of Guinea, coastal Atlantic swell crashing against seawall riprap, sharp radio squawk of port security dispatch in Ghanaian English.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Cantonments Private Penthouse — Cartel Vault (Accra)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Ultra-luxury modernist penthouse in Cantonments Accra, floor-to-ceiling panoramic glass facing tropical night skyline, dark Italian marble floors, architectural low-profile furniture, ambient indirect warm illumination, private armored server terminal discreetly integrated into mahogany credenza, photorealistic, wide cinematic shot, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Ultra-quiet, deadened luxury room tone with polished marble surface reflections. Deep, velvety quietude; subtle clink of crystal tumbler ice cubes against heavy glass, soft hiss of private high-efficiency climate control, faint muffled acoustic drone of Accra nighttime traffic eight floors below, quiet muted keystrokes on an encrypted standalone terminal, eerie absence of street noise conveying isolated wealth and control.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Aflao Border Crossing — Freight Transit Checkpoint (Togo-Ghana Border)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Dusty cross-border customs barrier, idling freight trucks under tropical midday heat haze, corrugated zinc inspection sheds, armed border patrol, chaotic logistics bottleneck, photorealistic, wide horizontal framing, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Harsh, sun-baked open-air border acoustics. Heavy rumble of idling commercial diesel trucks queuing bumper-to-bumper, dust swirling against corrugated zinc customs roof, sharp crack of customs stamp on waybill documents, multilingual cacophony of French, Ewe, and English checkpoint negotiations, distant metallic squeal of security barrier lifting, cicadas buzzing in roadside dry brush.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Victoria Island Marina &amp; Coastal Seawall (Lagos)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Rain-lashed concrete seawall along Lagos Marina, crashing dark waves from the lagoon, illuminated bridge pylons, neon billboard reflections shimmering on wet asphalt, parked vehicles, photorealistic, cinematic widescreen, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Dynamic, intense coastal storm soundscape. Violent tropical rain torrent drumming furiously against car roof and asphalt, surging tidal waves slapping heavily against concrete seawall pylons with deep low-end thud, whistling coastal gale winds whipping through bridge cables, rhythmic sweeping thud of windshield wipers, distant sirens echoing across wet Lagos highway.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Labadi Beach — Coastal Sunset Terrace (Accra)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Golden-amber twilight along Labadi Beach, Atlantic surf breaking in gentle white foam, silhouetted coconut palms bending in evening breeze, artisanal wooden fishing boats resting on wet sand, photorealistic, cinematic widescreen, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Intimate, warm open-air coastal atmosphere. Soft, continuous rhythmic rolling wash of Atlantic ocean waves receding over wet sand, warm coastal sea breeze whispering through coconut palm fronds, soft distant campfire crackle down the beach, muted acoustic guitar strumming softly from a distant beachfront terrace, serene natural tranquility with intimate foreground vocal isolation.</div>
+      </div>
+
+      <div class="prod-card">
+        <div class="pname">Ofia Top-Floor Boardroom — Executive Confrontation Suite (Lagos)</div>
+        <span class="prompt-lbl vis">Visual Reference Prompt (16:9 Widescreen)</span>
+        <div class="prompt-box">Panoramic executive boardroom overlooking Victoria Island and the Atlantic, long glass and polished mahogany conference table, recessed architectural downlights, high-contrast chiaroscuro, photorealistic, wide cinematic framing, 16:9.</div>
+        <span class="prompt-lbl snd">Environmental Sound &amp; Audio Bed Prompt (Spatial Audio / Foley)</span>
+        <div class="sound-box">Pristine, acoustically dampened executive boardroom reverb. Soft rustle of heavy bond paper dossier folders, crisp chime of porcelain coffee cups touching saucers, quiet hum of 4K telepresence video displays, tense heavy breathing and throat clearing, complete absence of ambient building bleed highlighting intense conversational silence and high-stakes verbal sparring.</div>
+      </div>
     </div>
   </div>
 </div>
