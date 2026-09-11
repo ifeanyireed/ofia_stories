@@ -1,127 +1,126 @@
 # Ofia: Season 1, Episode 1 Soundtrack Specification
 
-**Track Title:** *"Ada’s Ascent (From Aba Dust to Victoria Island)"*  
+**Track Title:** *"Ada (Slow Highlife Afrobeat)"*  
 **Series:** *Ofia (Season 1: Genesis of Trust)*  
 **Episode:** *Episode 01 — "The Provincial Hire"*  
-**Scene Alignment:** *Episode 1 Theme & Closing Climax (Shots 01–03 Arrival in Lagos; Shot 22 Twilight Skyline Climax)*  
-**Tempo / Meter:** 74 BPM | 6/8 Highlife R&B Polyrhythmic Groove  
-**Musical Key:** E-flat Major (Warm, triumphant, deeply emotional)  
-**Vocal Arrangement:** Lead Male Baritone (Darey style) + Full Polyphonic Choir (Soweto Gospel Choir style)
+**Scene Alignment:** *Episode 1 Theme & Closing Climax (Shots 01–03 Arrival; Shot 22 Twilight Skyline)*  
+**Style / Tempo:** Slow Highlife Afrobeat | 70 BPM | Laid-back hypnotic pocket groove  
+**Musical Key:** E Major / F-sharp Minor  
+**Vocal Arrangement:** Soulful Lead (Darey style) + Soaring Harmonies (Soweto Gospel Choir style)
 
 ---
 
 ## 1. Master AI Music Generation Prompt
-*(Optimized for Suno v3.5/v4, Udio, Stable Audio, and MusicFX)*
+*(Optimized for Suno v3.5/v4, Udio, Stable Audio)*
 
 ```text
-Cinematic South African gospel choral soundtrack, contemporary African R&B fusion, soaring Soweto Gospel Choir harmonies, soulful male lead vocal in the warm rich baritone style of Darey, emotional, spiritual, uplifting, cinematic 16:9 score. Warm fingerpicked acoustic guitar, highlife polyrhythmic percussion, talking drums, resonant udu, subtle cello swells, grand orchestral brass, massive multi-part vocal harmonies, antiphonal call-and-response chanting "Ada", epic crescendo, pristine Abbey Road studio acoustic depth.
+Slow highlife afrobeat, 70 BPM, laid-back hypnotic pocket groove, warm rolling bassline, clean rhythmic highlife guitar licks, shekere, subtle talking drum, muted warm brass horn section. Soulful warm baritone lead vocals in the style of Darey, massive soaring vocal harmonies from Soweto Gospel Choir chanting "Ada". Sparse lyrics, poetic rhyming couplets, lots of breathing room, spacious reverb, cinematic, organic, deeply emotional and uplifting.
 ```
 
 ---
 
-## 2. Audio Engineering & Production Blueprint
+## 2. Audio Engineering & Style Notes
 
-| Parameter | Specification |
+| Parameter | Execution |
 | :--- | :--- |
-| **Lead Vocal (Darey style)** | Warm, chest-heavy baritone with silky tenor falsetto transitions; dry upfront presence with a plate reverb tail, conveying gravitas, empathy, and raw ambition. |
-| **Choral Power (Soweto style)** | Traditional call-and-response vocal layering; booming Zulu/Xhosa choral vocal weight underneath English anthemic lyrics; crisp dynamic contrasts from reverent hums to room-filling gospel roars. |
-| **Acoustic Blend** | Fingerpicked nylon-string acoustic guitar, kora embellishments, syncopated highlife brass, rhythmic talking drum (Iya Ilu) pitch bends, and udu clay pot sub-resonances. |
-| **Dynamic Arc** | Starts intimate with dusty acoustic strings as Ada leaves Aba; swells into driving corporate R&B; erupts into a transcendent 8-part gospel choir crescendo over Victoria Island at dusk. |
+| **Rhythm & Beat** | Slow Highlife Afrobeat (70 BPM). Heavy, warm electric bassline locked in with shekere and kick drum. No clutter, lots of open space. |
+| **Vocal Delivery** | Sparse, unhurried, soulful baritone (Darey). Every line has room to echo and resonate. |
+| **Choral Dynamic** | Soweto Gospel Choir provides deep harmonic beds, call-and-response shouts, and soaring high octaves on the hook *"Ada"*. |
+| **Instrumentation** | Clean muted single-note guitar licks, warm Rhodes electric piano, mellow muted brass stabs, gentle udu pulse. |
 
 ---
 
-## 3. Lyrics & Choral Score
+## 3. Sparse Rhyming Lyrics & Score
 
 ```text
-[Intro: Ambient Dawn]
-(Gentle morning ocean breeze, warm nylon-string acoustic guitar picking a slow highlife pattern)
-(Soweto Gospel Choir: Soft, humming harmonies in deep E-flat, rising like mist)
-(Choir Tenors & Sopranos - Whispered, reverent call):
-Ada... Ada...
-Ada... Ada...
+[Intro]
+(Slow highlife bassline walks in, lazy shekere rhythm, warm clean guitar lick)
+(Soweto Gospel Choir - Deep, resonant, reverent hum):
+Ada...
+Ada...
 
-[Verse 1: Darey - Intimate, Warm Baritone Lead]
-She walked out of the red clay dust of Aba town,
-With her mother’s fabric shears and her head held proud.
-No silver spoon, no safety net below,
-Just twenty years of sweat and seeds she had to sow.
-They called her a provincial girl who couldn't stand the pace,
-Now watch her take her seat and look power in the face.
+[Verse 1: Darey - Unhurried, Soulful Baritone]
+Dust on her shoe.
+Sky turning blue.
+Leaving the past.
+Building to last.
 
-[Pre-Chorus: Darey with Choir Building Beneath]
-(Darey):
-Every step a promise to the ones they left behind,
-(Choir - Resonant low baritones):
+From Aba town,
+She won’t bow down.
+Quiet and bold,
+Worth more than gold.
+
+[Chorus: Soweto Gospel Choir & Darey - Soaring Harmonic Lift]
+Ada, Ada, rise and go,
+Let the river flow.
+Ada, Ada, take your place,
+Run your sacred race.
+(Choir):
 Ada...
 (Darey):
-A vision burning hotter than the midday sun can find.
-(Choir - Mid-register swell):
+She dey go high.
+(Choir):
 Ada...
 (Darey):
-From the open market stalls to the towers in the sky!
+Touch the sky.
 
-[Chorus: Massive Soweto Gospel Choir Explosion & Darey]
-(Full Choir in thunderous, soaring 8-part polyphonic gospel harmony):
-Ada!
-Carry the road, carry the dream,
-Climb every mountain where you've never been!
-Ada!
-From the dust of the market to the edge of the sky,
-Your ambition is born, let your spirit rise high!
-(Darey ad-lib - Soulful belt):
-Oh, let it rise, let it rise!
-(Choir - Staccato rhythmic bounce with talking drum):
-Ada! Ada! Rise, Ada!
-Ada! Ada! Rise, Ada!
+[Verse 2: Darey - Relaxed Groove with Horn Accents]
+Towers of glass.
+Watching them pass.
+Cold in the street.
+Fire in her feet.
 
-[Verse 2: Darey - Passionate, Driving R&B Delivery]
-Concrete canyons of Victoria Island, glass against the sun,
-They think this company is theirs, but the journey’s just begun.
-She came to build a fortress where the forgotten stand,
-A sovereign path of honor written by her hand.
-They hear her gentle voice, but they don't see the fire,
-A daughter of the soil reaching higher, ever higher!
+She speaks with pride,
+Truth on her side.
+One single seed,
+A nation to lead.
 
-[Chorus: Full Choir & Orchestral Lift]
-(Full Choir - Anthemic, uplifting, transcendent):
-Ada!
-Carry the road, carry the dream,
-Climb every mountain where you've never been!
-Ada!
-From the dust of the market to the edge of the sky,
-Your ambition is born, let your spirit rise high!
+[Chorus: Soweto Gospel Choir & Darey - Full Choir Swell]
+Ada, Ada, rise and go,
+Let the river flow.
+Ada, Ada, take your place,
+Run your sacred race.
+(Choir):
+Ada...
+(Darey):
+She dey go high.
+(Choir):
+Ada...
+(Darey):
+Touch the sky.
 
-[Bridge: Antiphonal Call-and-Response - Darey & Choir]
-(Udu drums and syncopated brass kick in; highlife rhythm accelerates)
-(Darey - Powerful raspy baritone cry):
-Who said the tailor’s daughter couldn't change the land?
+[Bridge: Call & Response - Horns & Talking Drum Rise]
+(Darey):
+Through the fire—
 (Choir):
 Ada!
 (Darey):
-Who carries the hunger of a million hands?
+Climbing higher—
 (Choir):
 Ada!
 (Darey):
-Unbroken! Unshaken! The future in her sight!
-(Choir - Soaring soprano descant hitting high notes):
-Aaaaa-da! Rise into the light!
+In the wire—
+(Choir):
+Ada!
+(Darey):
+Her desire!
 
-[Outro: Triumphant Gospel Decrescendo]
-(Live brass chords sustain; acoustic guitar gently resumes)
-(Darey - Tender, intimate whisper over soft choir hum):
-From the dust to the skyline...
-The journey begins.
-(Choir - Lingering, angelic multi-part chord fading into the Atlantic wind):
+[Outro: Hypnotic Highlife Fade]
+(Gospel choir hums the chord; warm horns sustain a slow melodic line)
+(Darey - Soft, intimate):
+Dust to the crown.
+No looking down.
+(Choir - Floating, angelic):
 Ada...
 Ada...
-(Final resonant acoustic bass pluck on the root note)
+(Final bass note and shekere tap)
 ```
 
 ---
 
-## 4. Scene Sync: Episode 1 Shot Mapping
+## 4. Episode 1 Shot Synchronization
 
-- **Shots 01–03 (The Crossing):** Intro acoustic guitar and soft choir hums establish Ada stepping off the overnight transit bus onto Lagos pavement with red soil still on her shoes.
-- **Shots 04–09 (The Gate):** Verse 1 accompanies her navigating the towering glass facade of Ofia House; security checks contrast against her quiet composure.
-- **Shots 10–17 (The Boardroom & Loft):** Verse 2 and the Bridge rise subtly under dialogue as Tobi and Chiamaka test her resolve; rhythmic percussion mirrors her calculating product clarity.
-- **Shots 18–22 (The Twilight Skyline & Horizon):** Full Chorus and Outro explode as Ada stands before the panoramic Victoria Island sunset, holding her mother's vintage sewing shears in her blazer pocket, whispering her vow to defend grassroots merchants.
+- **Shots 01–03:** Slow bassline and shekere drop as Ada steps onto Lagos ground.
+- **Shots 04–09 (Verse 1):** Sparse words play across her calm walk past security into Ofia House.
+- **Shots 10–17 (Verse 2 & Bridge):** Horns and call-and-response build as Ada addresses the executive team.
+- **Shots 18–22 (Chorus & Outro):** Full choir harmonies rise as Ada looks across the twilight skyline, shears in hand.
